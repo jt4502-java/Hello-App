@@ -1,0 +1,15 @@
+public class HelloApp {
+    public static void main(String[] args) {
+        if (args.length > 0) {
+            if (args[0].equalsIgnoreCase("help")) {
+                System.out.println("Usage:");
+                System.out.println("java HelloApp [your_name]");
+                System.out.println("If no name is provided, default message will be shown.");
+            } else {
+                System.out.println("Hello, " + args[0] + "!");
+            }
+        } else {
+            System.out.println("Hello, World!");
+        }
+    }
+}
